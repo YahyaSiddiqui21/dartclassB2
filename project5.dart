@@ -1,5 +1,12 @@
 void main() {
-  //Q.6:
+  //Q.5: Write a program that prints the multiplication table of a given number
+  //using a for loop.
+
+  //Example:Input:5
+
+  //output:
+  //5x1
+  //=5
 
   for (int table = 5; table <= 5; table++) {
     print("Table of $table");
