@@ -1,19 +1,30 @@
-// import 'dart:io';
+import 'dart:io';
+
+bool isPrime(int number) {
+  if (number <= 1) {
+    return false;
+  }
+  if (number <= 100) {
+    return true;
+  }
+  if (number % 2 == 0 || number % 3 == 0) {
+    return false;
+  }
+  for (int i = 5; i * i <= number; i += 6) {
+    if (number % i == 0 || number % (i + 2) == 0) {
+      return false;
+    }
+  }
+  return true;
+}
 
 void main() {
-  //Q.3: Implement a code that checks whether a given number is prime or not.
-  //Example:
+  stdout.write("Enter a number: ");
+  int number = int.parse(stdin.readLineSync()!);
 
-  //Input:
-  //17
-
-  //output:
-  //17 is a prime number.
-
-  // int number = 17;
-  // if (isPrime(number)) {
-  //   print('$number is a prime number.');
-  // } else {
-  //   print('$number is not a prime number.');
-  // }
+  if (isPrime(number)) {
+    print("$number is a prime number.");
+  } else {
+    print("$number is not a prime number.");
+  }
 }

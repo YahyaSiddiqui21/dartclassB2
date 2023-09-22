@@ -9,9 +9,6 @@ void main() {
     // Initialize a variable to store the count
     int vowelCount = 0;
 
-    // Convert the input string to lowercase to handle both uppercase and lowercase vowels
-    inputString = inputString.toLowerCase();
-
     // Define a list of vowels
     final vowels = ['a', 'e', 'i', 'o', 'u'];
 

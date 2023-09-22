@@ -1,5 +1,5 @@
 void main() {
-  //Write a program that calculates thesum of the squares of all odd numbers in
+  //Q.11: Write a program that calculates thesum of the squares of all odd numbers in
   // a given list using a for loop and if-else condition.
 
   List<int> numbers = [3, 5, 2, 8, 7, 4, 6, 9];
